@@ -1,0 +1,39 @@
+/* Importa uma fonte custumizada do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kranky&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Altera o estilo do corpo da página HTML */
+body {
+    /* Altera a cor de fundo */
+    background-color: #004747;
+}
+
+/* Altera o estilo do título (elemento HTML "h1") */
+h1 {
+    /* Usar a fonte importada do Google Fonts */
+    font-family: "Unna", serif;
+    /* Altera a cor da fonte */
+    color: #008e8e;
+    
+}
+/* Altera o estilo do cartão (caixa de texto e botão de adicionar tarefa */
+input[type = "text"] {
+    background-color: rgb(96, 192, 192);
+    border: 1px solid #00d6d6
+}
+
+/* Altera o estilo do botão "Adicionar" nova tarefa */
+#btn-nova-tarefa {
+    background-color: aliceblue;
+    color:black;
+}
+
+#btn-nova-tarefa:hover {
+    background-color:#0e6969;
+    color: rgb(30, 49, 65);
+}
+
+/* Altera o estilo das tarefas adicionadas */
+list-group-item {
+    background-color: rgb(54, 112, 107);
+    border: 1px solid #4e8080;
+}

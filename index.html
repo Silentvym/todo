@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta char]set="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <!-- "defer" executa o script só depois da página estar 100% carregada -->
+    <script src="script.js"defer="defer"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Cria três linhas 
+        Cada uma com 12 linhas, ou seja 
+        Cada linha ocupa a tela inteira -->
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center pt-5">Minhas Tarefas</h1>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="pt-3 col-12">
+                <!-- Cria um cartão -->
+                <div class="card">
+                    <div class="card-body">
+                        <!-- .input-group une o cartão e o campo de adição de tarefa -->
+                        <div class="input-group">
+                            <input type="text" id="txt-nova-tarefa" class="form-control" placeholder="Adicionar Nova Tarefa..." />
+                            <input type="button" id="btn-nova-tarefa" class="btn btn-outline-info" value="Adicionar" />
+                        </div>
+                        
+                    </div> <!-- .card-->
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12 pt-3">
+                <!-- Cria uma lista (h1) -->
+                <ul class="list-group" id="lista-tarefas">
+                    
+                </ul>
+            </div>
+            
+        </div>
+    </div> <!---- .container -->
+</body>
+</html>
